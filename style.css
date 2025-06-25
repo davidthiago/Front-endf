@@ -1,0 +1,219 @@
+/* 1. Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header.navbar {            
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .5px;
+}
+.navbar .logo span {       
+  color: #a44cff;
+}
+
+
+.nav-links a,
+.dropbtn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 6px 8px;
+  font-size: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color .25s;
+}
+.nav-links a:hover,
+.dropbtn:hover {
+  color: rgba(183, 0, 255, 0.6);
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  min-width: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,.45);
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-content a:hover {
+  background: #333;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-bar {
+  width: 160px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.assine-btn {
+  padding: 6px 16px;
+  background: rgba(183, 0, 255, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .25s;
+}
+.assine-btn:hover {
+  background: rgba(183, 0, 255, 0.6);
+}
+
+.user-profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+header {                   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+
+.home-button {
+  background: none;
+  border: none;
+  color: #a44cff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.banner {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: auto;
+  opacity: .3;
+  z-index: 0;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  max-width: 600px;
+}
+
+.banner-content h2 {
+  font-size: 24px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 span {
+  color: cyan;
+}
+
+.banner-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(183, 0, 255, 0.6);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.filmes-lista,
+.series-lista {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  padding-left: 50px;   
+}
+
+.filmes-lista img,
+.series-lista img {
+  height: 240px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform .3s;
+}
+
+.filmes-lista img:hover,
+.series-lista img:hover {
+  transform: scale(1.05);
+}
